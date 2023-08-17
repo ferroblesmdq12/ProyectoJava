@@ -31,64 +31,116 @@ public class Main
 		int año = ingresoTeclado.nextInt();
 		
 
-		if(año >= 1900 && año <= 2099)
-		{
-			if(año % 4 == 0 && año % 100 !=0)
-			{
-				System.out.println(año + " Es año Biciesto");
-
-				if(mes == 2) 
-				{
-					if(dia >= 1 && dia <= 29)
-					{
-						System.out.println("rango de dias ingresado correcto.");
-					}
-					else
-					{
-						System.out.println("Rango de dias incorrecto !");
-					}
-				}
-				if(mes>=1 && mes<=12)
-				{
-					if(dia>=1 && dia<=31)
-					{
-						System.out.println("rango de dias ingresado correcto.");
-					}
-					else
-					{
-						System.out.println("Rango de dias incorrecto !");
-					}
-				}
-				else
-				{
-					System.out.println("Rango de mes incorrecto!");
-				}
-
-
-
-			}
-			else 
-			{
-				System.out.println("año cargado correctamente, No es Año Biciesto.");
-
-			}
-
-
-
-		}
-		else
-		{
-			System.out.println("año ingresado fuera de Rango");
-		}
+//		if(año >= 1900 && año <= 2099)
+//		{
+//			if(año % 4 == 0 && año % 100 !=0)
+//			{
+//				System.out.println(año + " Es año Biciesto");
+//
+//				if(mes == 2) 
+//				{
+//					if(dia >= 1 && dia <= 29)
+//					{
+//						System.out.println("rango de dias ingresado correcto.");
+//					}
+//					else
+//					{
+//						System.out.println("Rango de dias incorrecto !");
+//					}
+//				}
+//				if(mes>=1 && mes<=12)
+//				{
+//					if(dia>=1 && dia<=31)
+//					{
+//						System.out.println("rango de dias ingresado correcto.");
+//					}
+//					else
+//					{
+//						System.out.println("Rango de dias incorrecto !");
+//					}
+//				}
+//				else
+//				{
+//					System.out.println("Rango de mes incorrecto!");
+//				}
+//
+//
+//
+//			}
+//			else 
+//			{
+//				System.out.println("año cargado correctamente, No es Año Biciesto.");
+//
+//			}
+//
+//
+//
+//		}
+//		else
+//		{
+//			System.out.println("año ingresado fuera de Rango");
+//		}
 			
 		
 //		System.out.println("dia: " + dia + ",");
 //		System.out.println("mes: " + mes + ",");
 //		System.out.println("año: " + año );
 		
+		
+		
+		
+		
+		
+		
+		
+		/* Otra forma de hacerlo */
+		
+		// Validacion de años //
+		
+		if(año>=1900 && año<=2099)
+		{
+			if(año % 4 == 0 && año % 100 !=0)
+			{
+				System.out.printf(" %d Es Año biciesto.", año);
+				
+				if(mes == 2)
+				{
+					System.out.println("\n El mes 2 puede tener hasta 29 dias");
+				}	
+			}	
+		}
+		else
+		{
+			System.out.println("Año Fuera de Rango!");
+		}
+			
+		// Validacio de dias //
+		
+		if(dia>=1 && dia<=31)
+		{
+			System.out.println("\nDia cargado correctamente.");
+		}
+		else
+		{
+			System.out.println("\nDia ingresado fuera de rango!");
+		}
+		
+		
+		// Validacion de meses //
+		
+		if(mes>=1 && mes<=12)
+		{
+			System.out.println("Mes cargado correctamente.");
+		}
+		else
+		{
+			System.out.println("Mes fuera de rango!");
+		}
+		
+		
 		/* Fecha con printf() */
 		
-		System.out.printf("Fecha: %d / %d / %d", dia, mes, año);
+		System.out.printf("La fecha es: %d / %d / %d", dia, mes, año);
 		
   }
 }
