@@ -18,7 +18,8 @@ public class Main
 			Nota: Ojo, si el año es bisiesto, febrero tiene 29 días. Informar por consola si la fecha es correcta.
 		 */
 
-		System.out.println("Ingrese datos de Fecha (dd/mm/aaaa): \n\n");
+		System.out.println("Ingrese datos de Fecha (dd/mm/aaaa): \n");
+		
 		
 		Scanner ingresoTeclado = new Scanner(System.in);
 		
@@ -32,10 +33,10 @@ public class Main
 
 		if(año >= 1900 && año <= 2099)
 		{
-			if(año % 4 == 0 && año !=0)
+			if(año % 4 == 0 && año % 100 !=0)
 			{
-				System.out.println(año + "Es año Biciesto");
-				
+				System.out.println(año + " Es año Biciesto");
+
 				if(mes == 2) 
 				{
 					if(dia >= 1 && dia <= 29)
@@ -47,7 +48,7 @@ public class Main
 						System.out.println("Rango de dias incorrecto !");
 					}
 				}
-				else if(mes>=1 && mes<=12)
+				if(mes>=1 && mes<=12)
 				{
 					if(dia>=1 && dia<=31)
 					{
@@ -62,17 +63,17 @@ public class Main
 				{
 					System.out.println("Rango de mes incorrecto!");
 				}
-				
-					
-			    
+
+
+
 			}
 			else 
 			{
 				System.out.println("año cargado correctamente, No es Año Biciesto.");
-				
+
 			}
-		
-			
+
+
 
 		}
 		else
@@ -81,17 +82,13 @@ public class Main
 		}
 			
 		
-		System.out.println("dia: " + dia + ",");
-		System.out.println("mes: " + mes + ",");
-		System.out.println("año: " + año );
+//		System.out.println("dia: " + dia + ",");
+//		System.out.println("mes: " + mes + ",");
+//		System.out.println("año: " + año );
+		
+		/* Fecha con printf() */
 		
 		System.out.printf("Fecha: %d / %d / %d", dia, mes, año);
 		
-		
-		
-		
-		
-		
-
   }
 }
