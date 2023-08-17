@@ -105,42 +105,69 @@ public class Main
 				
 				if(mes == 2)
 				{
-					System.out.println("\n El mes 2 puede tener hasta 29 dias");
+					if(dia >=1 && dia<=29)
+					{
+						System.out.println("Dia correctamente ingresado");
+						
+						/* Fecha con printf() */
+						
+						System.out.printf("La fecha es: %d / %d / %d", dia, mes, año);
+					}
+					else
+					{
+						System.out.println("Ingresar hasta el dia 29");
+					}
+				}
+				
+			}
+			else
+			{
+				
+				
+				// Validacio de dias //
+				
+				if(dia>=1 && dia<=31)
+				{
+					System.out.println("\nDia cargado correctamente.");
+				}
+				else
+				{
+					System.out.println("\nDia ingresado fuera de rango!");
+				}
+				
+				
+				// Validacion de meses //
+				
+				if(mes>=1 && mes<=12)
+				{
+					System.out.println("Mes cargado correctamente.");
+				}
+				else
+				{
+					System.out.println("Mes fuera de rango!");
 				}	
-			}	
+				
+				
+				System.out.println("Año Cargado correctamente");
+				
+				/* Fecha con printf() */
+				
+				System.out.printf("\n La fecha es: %d / %d / %d", dia, mes, año);
+				
+			}
+			
+			
+			
 		}
 		else
 		{
 			System.out.println("Año Fuera de Rango!");
 		}
 			
-		// Validacio de dias //
-		
-		if(dia>=1 && dia<=31)
-		{
-			System.out.println("\nDia cargado correctamente.");
-		}
-		else
-		{
-			System.out.println("\nDia ingresado fuera de rango!");
-		}
 		
 		
-		// Validacion de meses //
-		
-		if(mes>=1 && mes<=12)
-		{
-			System.out.println("Mes cargado correctamente.");
-		}
-		else
-		{
-			System.out.println("Mes fuera de rango!");
-		}
 		
 		
-		/* Fecha con printf() */
-		
-		System.out.printf("La fecha es: %d / %d / %d", dia, mes, año);
 		
   }
 }
