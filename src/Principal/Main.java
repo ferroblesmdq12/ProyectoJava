@@ -31,67 +31,13 @@ public class Main
 		int año = ingresoTeclado.nextInt();
 		
 
-//		if(año >= 1900 && año <= 2099)
-//		{
-//			if(año % 4 == 0 && año % 100 !=0)
-//			{
-//				System.out.println(año + " Es año Biciesto");
-//
-//				if(mes == 2) 
-//				{
-//					if(dia >= 1 && dia <= 29)
-//					{
-//						System.out.println("rango de dias ingresado correcto.");
-//					}
-//					else
-//					{
-//						System.out.println("Rango de dias incorrecto !");
-//					}
-//				}
-//				if(mes>=1 && mes<=12)
-//				{
-//					if(dia>=1 && dia<=31)
-//					{
-//						System.out.println("rango de dias ingresado correcto.");
-//					}
-//					else
-//					{
-//						System.out.println("Rango de dias incorrecto !");
-//					}
-//				}
-//				else
-//				{
-//					System.out.println("Rango de mes incorrecto!");
-//				}
-//
-//
-//
-//			}
-//			else 
-//			{
-//				System.out.println("año cargado correctamente, No es Año Biciesto.");
-//
-//			}
-//
-//
-//
-//		}
-//		else
-//		{
-//			System.out.println("año ingresado fuera de Rango");
-//		}
 			
 		
 //		System.out.println("dia: " + dia + ",");
 //		System.out.println("mes: " + mes + ",");
 //		System.out.println("año: " + año );
 		
-		
-		
-		
-		
-		
-		
+	
 		
 		/* Otra forma de hacerlo */
 		
